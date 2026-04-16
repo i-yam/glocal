@@ -48,7 +48,10 @@ blockquote cite { display: block; margin-top: 12px; font-size: 14px; color: #555
 .map-card-label strong { display: block; font-family: sans-serif; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: normal; margin-bottom: 4px; }
 .map-card:first-child .map-card-label strong { color: #c07060; }
 .map-card:last-child .map-card-label strong { color: #6080c0; }
-.map-card-label span { font-size: 13px; color: #666; font-family: sans-serif; line-height: 1.5; display: block; }
+.map-card-label span { font-size: 13px; color: #666; font-family: sans-serif; line-height: 1.5; }
+.map-card-label [data-lang] { display: none; }
+body.lang-en .map-card-label [data-lang="en"] { display: block; }
+body.lang-de .map-card-label [data-lang="de"] { display: block; }
 
 /* CONCEPT CARDS */
 .concept-cards { display: grid; gap: 12px; margin: 24px 0; }
@@ -168,14 +171,16 @@ body.lang-de .en-i { display: none; } body.lang-de .de-i { display: inline; }
         <img src="images/local.jpg" alt="Kurchatov Institute, Moscow — paths shaped by use">
         <div class="map-card-label">
           <strong><span class="en-i">Local model</span><span class="de-i">Lokales Modell</span></strong>
-          <span><span class="en-i">Kurchatov Institute, Moscow. The paths emerged from the data — from actual human behaviour. No equation was imposed in advance.</span><span class="de-i">Kurtschatow-Institut, Moskau. Die Wege entstanden aus den Daten — aus tatsächlichem menschlichen Verhalten. Keine Gleichung wurde im Voraus auferlegt.</span></span>
+          <span data-lang="en" class="inl" style="display:block;">Kurchatov Institute, Moscow. The paths emerged from the data — from actual human behaviour. No equation was imposed in advance.</span>
+          <span data-lang="de" class="inl" style="display:block;">Kurtschatow-Institut, Moskau. Die Wege entstanden aus den Daten — aus tatsächlichem menschlichen Verhalten. Keine Gleichung wurde im Voraus auferlegt.</span>
         </div>
       </div>
       <div class="map-card">
         <img src="images/global.jpg" alt="Schloss Sanssouci, Potsdam — geometric planned paths">
         <div class="map-card-label">
           <strong><span class="en-i">Global model</span><span class="de-i">Globales Modell</span></strong>
-          <span><span class="en-i">Schloss Sanssouci, Potsdam. The paths follow a single geometric plan. One rule governs the whole space, top-down, before anyone walked a step.</span><span class="de-i">Schloss Sanssouci, Potsdam. Die Wege folgen einem einzigen geometrischen Plan. Eine Regel beherrscht den gesamten Raum — von oben nach unten, bevor jemand einen Schritt gegangen ist.</span></span>
+          <span data-lang="en" class="inl" style="display:block;">Schloss Sanssouci, Potsdam. The paths follow a single geometric plan. One rule governs the whole space, top-down, before anyone walked a step.</span>
+          <span data-lang="de" class="inl" style="display:block;">Schloss Sanssouci, Potsdam. Die Wege folgen einem einzigen geometrischen Plan. Eine Regel beherrscht den gesamten Raum — von oben nach unten, bevor jemand einen Schritt gegangen ist.</span>
         </div>
       </div>
     </div>
